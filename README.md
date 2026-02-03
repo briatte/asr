@@ -1,9 +1,9 @@
-# `>` Tutorials in Applied Statistics with R and RStudio
+# `>` Tutorials in Applied Stats with R and RStudio
 
 > [François Briatte](https://f.briatte.org/)  
 > Spring 2025. __Work in progress.__
 
-Tutorials in ~~applied stats~~ data science with [R][r], [RStudio][rstudio], and the [`{tidyverse}`][tidyverse] packages, aimed at social science undergraduates with absolutely zero training in statistical computing whatsoever.
+Teaching material for some tutorials in ~~applied statistics~~ data science with [R][r], [RStudio][rstudio], and the [`{tidyverse}`][tidyverse] packages, aimed at social science undergraduates with zero prior training in statistical computing whatsoever.
 
 [r]: https://www.r-project.org/
 [rstudio]: https://posit.co/products/open-source/rstudio/
@@ -26,7 +26,7 @@ __Very much work in progress. The list of topics covered in each session, especi
 7. [Regression (continued)](#7-regression-continued)
 8. Wrap-up
 
-Bonus section: [dependencies](#dependencies).
+Bonus section: [dependencies](#dependencies)
 
 # Part 1. Basics
 
@@ -83,8 +83,8 @@ Software setup, first steps with coding, handling data, and plotting things.
     - type coercion/conversion: `as.numeric`, `as.integer` etc.
     - handling missing values: `is.na`, `na_if`, `drop_na`
 
-`>` Demo 2: __[Support for the implementation of sharia law][d2]__ (WVS c. 2000)  
-`>` Exercise 2: __[U.S. adult obesity][x2]__ (U.S. NHIS 2018)
+`>` Demo 2: __[Support for the implementation of sharia law][d2]__ (WVS)  
+`>` Exercise 2: __[U.S. adult obesity][x2]__ (U.S. NHIS)
 
 [d2]: https://github.com/briatte/asr/tree/master/class-02
 [x2]: https://github.com/briatte/asr/tree/master/exercise-02
@@ -101,10 +101,46 @@ Software setup, first steps with coding, handling data, and plotting things.
   - Logarithmic transformations
 
 `>` Demo 3: __[Life expectancy and GDP/capita][d3]__ (World Bank)  
-`>` Exercise 3: __[U.S. adult obesity, continued][x3]__ (U.S. NHIS 2018)
+`>` Exercise 3: __[U.S. adult obesity, continued][x3]__ (U.S. NHIS)
 
 [d3]: https://github.com/briatte/asr/tree/master/class-03
 [x3]: https://github.com/briatte/asr/tree/master/exercise-03
+
+## 4. Association
+
+`>` Demo 4: __[Colonial origin and GDP/capita][d4]__ (QOG)  
+`>` Exercise 4: __[Acceptability of torture][x4]__ (ESS)
+
+[d4]: https://github.com/briatte/asr/tree/master/class-04
+[x4]: https://github.com/briatte/asr/tree/master/exercise-04
+
+## 5. Association (continued)
+
+`>` Demo 5: __[Acceptability of torture, continued][d5]__ (ESS)  
+`>` Exercise 5: __[...][x5]__ <!(GSS)>
+
+<!-- PROJECT INSTRUCTIONS + TEMPLATE -->
+
+[d5]: https://github.com/briatte/asr/tree/master/class-05
+[x5]: https://github.com/briatte/asr/tree/master/exercise-05
+
+## 6. Regression
+
+`>` Demo 6: __[Fertility and education][d6]__ (QOG)  
+`>` Exercise 6: __[Fertility and education, continued][x6]__ (QOG)
+
+[d6]: https://github.com/briatte/asr/tree/master/class-06
+[x6]: https://github.com/briatte/asr/tree/master/exercise-06
+
+## 7. Regression (continued)
+
+`>` Demo 7: __[...][d7]__ (...)  
+`>` Exercise 7: __[...][x7]__ (...)
+
+<!-- FINAL INSTRUCTIONS -->
+
+[d7]: https://github.com/briatte/asr/tree/master/class-07
+[x7]: https://github.com/briatte/asr/tree/master/exercise-07
 
 * * *
 
