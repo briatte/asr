@@ -100,8 +100,8 @@ wvs <- haven::read_dta("data/wv4_islam_subset.dta")
 glimpse(wvs) # no need to use the `dplyr::` prefix, package has been loaded
 
 # since it looks like the data has labels ("lbl"), take a look at it in the
-# 'Environment' pane, or view it in a separate window using the `view` function
-view(wvs)
+# 'Environment' pane, or view it in a separate window using the `View` function
+View(wvs)
 
 # labels of the `V223` variable
 haven::print_labels(wvs$V223)

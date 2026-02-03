@@ -22,7 +22,7 @@ nhis <- haven::read_dta("data/nhis2018.dta.zip")
 
 # take a quick look (uncomment to run, or type in the Console)
 # glimpse(nhis)
-# view(nhis)
+# View(nhis)
 
 # note how some variables come with labels (`lbl`)
 # we covered labelled variables with Exercise 2
