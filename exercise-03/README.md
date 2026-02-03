@@ -54,7 +54,7 @@ Open `02-data-visualization.r` and do the following with it:
 
 ## 3. Spatial visualization
 
-__This entire section of the exercise is optional.__
+___This section is optional. See 'Final notes' for details.___
 
 The U.S. CDC website features many maps of [adult obesity prevalence][cdc]. Let's create our own: open `03-prevalence-rates.r`, execute the code, and towards the end, replace the parts that read '`...`' with the right object and variable names to reproduce the map saved under `obesity-prevalence.png` in the `plots` folder, which is also shown on the next page.
 
@@ -66,7 +66,7 @@ _Hint_ --- take a look inside the `geo` object to find the right variable names.
 
 ## 4. Survey-weighted estimates
 
-__This entire section of the exercise is optional.__
+___This section is optional. See 'Final notes' for details.___
 
 So far, our code has used __unweighted__ estimates of obesity in the U.S. --- we have not applied survey weights, in order to keep things simple, and also because [survey weighting is a mess][gelman07] that even professional researchers struggle with.
 
@@ -82,10 +82,12 @@ _Hint_ --- the hardest part will be modifying the code that uses the [`facet_gri
 
 [facet_grid]: https://ggplot2.tidyverse.org/reference/facet_grid.html
 
-* * *
+## Final notes
 
-__N.B.__ The optional parts of this exercise are meant for students who already feel quite comfortable with R and with the syntax used by the [`ggplot2`][ggplot2] package. Give them a try if you like, but do not feel discouraged if you fail to complete them.
+The optional parts of this exercise are meant for students who already feel quite comfortable with R and with the syntax used by the [`ggplot2`][ggplot2] package. Give them a try if you like, but do not feel discouraged if you fail to complete them.
 
 __You will be expected to have _some_ knowledge of how to draw plots with [`ggplot2`][ggplot2] for graded work, but you will _not_ be expected to draw complex plots such as maps or survey-weighted point estimates.__
 
 We will come back to the topic of confidence intervals very soon.
+
+Thanks for your work!
