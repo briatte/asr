@@ -51,7 +51,8 @@ ggplot(d, aes(lexp)) +
 
 # density curve
 ggplot(d, aes(lexp)) +
-  geom_density()
+  geom_density() +
+  geom_rug()
 
 # faceted histograms
 ggplot(d, aes(lexp)) +
@@ -141,7 +142,7 @@ ggplot(geo, aes(fill = lexp)) +
        subtitle = "Data: World Development Indicators, 2022-2023")
 
 # export with specific dimensions
-ggsave("life-expectancy.png", width = 8, height = 4.5)
+ggsave("plots/life-expectancy.png", width = 8, height = 4.5)
 
 # more complex plots ------------------------------------------------------
 
@@ -176,6 +177,6 @@ ggplot(d, aes(y = lexp, x = gdpc)) +
   labs(y = "Life expectancy", x = "GDP per capita")
 
 # export final result
-ggsave("preston-curve.png", width = 9, height = 6)
+ggsave("plots/preston-curve.png", width = 9, height = 6)
 
 # kthxbye
