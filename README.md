@@ -34,13 +34,13 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 1. Software
 
-- RStudio interface
+- __RStudio interface__
   - The panes layout
   - Setting preferences
   - Executing code from the Console
   - Clearing the Console: `Ctrl-L`
   - Executing code from a script: `Ctrl-Enter`
-- R syntax
+- __R syntax__
   - Comments (`#`) and code
   - Functions and arguments
   - Objects and assignment: `<-`
@@ -55,7 +55,7 @@ Software setup, first steps with coding, handling data, and plotting things.
 ## 2. Data
 
 - More on the RStudio interface
-  - Setting the working directory
+  - Setting the __working directory__
   - Doing so by using RStudio project files: `.Rproj`
   - The Files and Plots panes
   - Executing code down to a given line: `Ctrl-Alt-B`
@@ -64,24 +64,23 @@ Software setup, first steps with coding, handling data, and plotting things.
   - R objects and types
   - Data frames, variables and values
   - R has many packages and sub-syntaxes: base, `{tidyverse}`, `{ggplot2}`, etc.
-- Data wrangling, mostly with the `{dplyr}` package
-  - Data I/O
+- __Data wrangling__, mostly with the `{dplyr}` package
+  - __Data I/O__
     - reading/writing datasets with `{readr}`, `{haven}` and `{readxl}`
     - inspecting datasets: `head`, `glimpse`, `view`
-    - using factors with survey data
-    - passing mentions -- strings, dates and special formats
+    - using __factors__ ('labelled' variables) with esp. survey data
+    - passing mentions -- strings and other special formats, e.g. dates
   - Data manipulation on a single dataset
-    - selecting variables: `$`, `select`
-    - sorting (ordering): `arrange`
-    - subsetting: `filter`
-    - aggregating and summarising values: `group_by` + `summarise`
-  - Data manipulation on multiple datasets
-    - joining (merging) two datasets: `full_join` and the like
-    - binding multiple datasets: `bind_rows`
+    - __selecting__ variables: `$`, `select`
+    - __sorting__ (ordering): `arrange`
+    - __subsetting__ (filtering) observations: `filter`
+    - __aggregating and summarising__ values: `group_by` + `summarise`
   - Recoding and transforming values: `mutate`
-    - 'if/else' recodes: `if_else` and `case_when`
+    - __'if/else'__ recodes: `if_else` and `case_when`
     - type coercion/conversion: `as.numeric`, `as.integer` etc.
-    - handling missing values: `is.na`, `na_if`, `drop_na`
+    - handling __missing values__ (`NA`): `is.na`, `na_if`, `drop_na`
+ - Data manipulation on multiple datasets
+   - __joining__ (merging) two datasets: `full_join`, `left_join` and the like
 
 `>` Demo 2: __[Support for the implementation of sharia law][d2]__ (WVS)  
 `>` Exercise 2: __[U.S. adult obesity][x2]__ (U.S. NHIS)
