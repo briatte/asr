@@ -12,6 +12,10 @@
 
 # required packages -------------------------------------------------------
 
+library(tidyverse) # this loads some of the packages below (and more)
+
+# useful packages within the tidyverse:
+
 library(dplyr)   # transform data
 library(ggplot2) # visualize data
 library(haven)   # open Stata datasets
@@ -222,7 +226,7 @@ table(as_factor(wvs$IV166), wvs$B_COUNTRY_ALPHA, exclude = NULL)
 
 # the goal is to get (and understand!) the following results
 group_by(wvs, country = V2) %>%
-  mutate(sharia = if_else(IV166 < 5, IV166, NA),
+  mutate(sharia = if_else(IV166 > 0, IV166, NA),
          prosharia = case_when(sharia %in% 1:2 ~ 1,
                                sharia %in% 3:5 ~ 0, .default = NA)) %>%
   summarise(prosharia = 100 * mean(prosharia, na.rm = TRUE),
@@ -231,13 +235,13 @@ group_by(wvs, country = V2) %>%
 # step number one is to make sure that we exclude any missing values from the
 # `IV166` variable, and then step number two is to 'recode' responses 1 and 2
 # into value 1 (agree), and the other responses into value 0 (disagree)
-wvs$sharia <- if_else(wvs$IV166 < 5, wvs$IV166, NA)
+wvs$sharia <- if_else(wvs$IV166 > 0, wvs$IV166, NA)
 wvs$prosharia <- if_else(wvs$sharia < 3, 1, 0)
 
 mean(wvs$prosharia, na.rm = TRUE) # percentage across all countries
 
 # the `mutate` function lets you do the above with less clutter
-wvs <- mutate(wvs, sharia = if_else(IV166 < 5, IV166, NA),
+wvs <- mutate(wvs, sharia = if_else(IV166 > 0, IV166, NA),
               prosharia = if_else(sharia < 3, 1, 0))
 
 mean(wvs$prosharia, na.rm = TRUE) # percentage across all countries
