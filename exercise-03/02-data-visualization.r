@@ -12,9 +12,7 @@
 
 # required packages -------------------------------------------------------
 
-library(dplyr)
-library(ggplot2)
-library(readr)
+library(tidyverse)
 
 # 1. import the processed dataset -----------------------------------------
 

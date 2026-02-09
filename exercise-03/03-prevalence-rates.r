@@ -12,10 +12,8 @@
 
 # required packages -------------------------------------------------------
 
-library(dplyr)
-library(ggplot2)
-library(readr)
 library(sf)
+library(tidyverse)
 
 # load obesity data -------------------------------------------------------
 

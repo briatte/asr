@@ -12,9 +12,7 @@
 
 # required packages -------------------------------------------------------
 
-library(dplyr)
-library(haven)
-library(readr)
+library(tidyverse)
 
 # import ------------------------------------------------------------------
 

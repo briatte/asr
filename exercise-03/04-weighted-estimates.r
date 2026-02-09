@@ -12,10 +12,8 @@
 
 # required packages -------------------------------------------------------
 
-library(dplyr)
-library(ggplot2)
-library(readr)
 library(survey)
+library(tidyverse)
 
 # import the processed dataset --------------------------------------------
 
