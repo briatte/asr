@@ -111,6 +111,19 @@ by_continent <- drop_na(d, colonized) %>%
 ggplot(by_continent, aes(y = continent, x = mu_lifexp, fill = colonized)) +
   geom_col(position = position_dodge2(preserve = "single"))
 
+# the bar plots above require understanding that you can plot different things
+# with them: by default, `geom_bar` plots counts, such as the number of former
+# colonies in Asia, Oceania etc., whereas `geom_col` will plot actual values,
+# such as average life expectancy in Asia, Oceania etc.
+
+# another way to use `geom_bar` is to ask it to plot a summary statistic, e.g.
+# an average, which it will compute for us; this avoids having to proceed in
+# two separate steps, as shown above (thanks Kevin for the reminder)
+
+ggplot(d , aes(x = continent, y = lexp)) +
+  geom_bar(stat = "summary", fun = "mean") +
+  labs(title = "Average life expectancy per continent")
+
 # maps --------------------------------------------------------------------
 
 # step 1: import country boundaries (shapefile)
