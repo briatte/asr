@@ -38,6 +38,6 @@ full_join("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan26.csv" %>%
           by = "iso3c") %>%
   mutate(country = countrycode(iso3c, "iso3c", "country.name"),
          continent = countrycode(iso3c, "iso3c", "continent"),
-         region = countrycode(iso3c, "iso3c", "region")) %>% 
+         region = countrycode(iso3c, "iso3c", "region"), .after = 1) %>%
   readr::write_tsv("data/life-expectancy.tsv")
 ```
