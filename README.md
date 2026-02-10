@@ -151,11 +151,11 @@ The course runs on R 4.x and depends on the following packages:
 install.packages("remotes")
 
 # required for the tutorials and exercises
-pkgs <- c("broom", "countrycode", "ggrepel", "performance", "sf", "texreg", 
-          "survey", "tidyverse")
+pkgs <- c("broom", "ggrepel", "performance", "sf", "texreg", "survey",
+          "tidyverse")
 remotes::install_cran(pkgs)
 
 # required to produce the exercise data
-ex <- c("WDI", "writexl")
+ex <- c("countrycode", "WDI", "writexl")
 remotes::install_cran(ex)
 ```
