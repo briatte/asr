@@ -6,17 +6,15 @@
 # /_/   \_\ .__/| .__/|_|_|\___|\__,_| |____/ \__\__,_|\__|___/
 #         |_|   |_|
 #
-# Life expectancy and colonial origin
+# Life expectancy and GDP/capita
 #
 # ============================= See README file for data sources and details ===
 
 # required packages -------------------------------------------------------
 
-library(countrycode)
-library(dplyr)
-library(ggplot2)
 library(ggrepel)
 library(sf)
+library(tidyverse)
 
 # load and inspect the data -----------------------------------------------
 

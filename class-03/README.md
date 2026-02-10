@@ -1,18 +1,18 @@
 # README
 
-__Data source for shapefiles:__ [World Bank Official Boundaries][owb].
+__Main data source:__ World Bank [World Development Indicators][wdi], 2022-2023, retrieved with the `WDI` R package by Vincent Arel-Bundock.
 
-[owb]: https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries
+[wdi]: https://databank.worldbank.org/source/world-development-indicators
+
+__Data source for continents and regions:__ `countrycode` (by the same author).
 
 __Data source for colonial origin:__ [Quality of Government Standard Dataset][qog], 2026. Data are from years 2022-2023. See the codebook for precise data sources.
 
 [qog]: https://www.gu.se/en/quality-government/qog-data/data-downloads/standard-dataset
 
-__Data source for life expectancy:__ World Bank [World Development Indicators][wdi], 2022-2023, retrieved with the `WDI` R package by Vincent Arel-Bundock.
+__Data source for shapefiles:__ [World Bank Official Boundaries][owb].
 
-[wdi]: https://databank.worldbank.org/source/world-development-indicators
-
-__Data source for continents and regions:__ `countrycode` (by the same author).
+[owb]: https://datacatalog.worldbank.org/search/dataset/0038272/World-Bank-Official-Boundaries
 
 ```r
 library(countrycode)
