@@ -12,9 +12,7 @@
 
 # required packages -------------------------------------------------------
 
-library(dplyr)   # transform data
-library(ggplot2) # visualize data
-library(haven)   # open Stata datasets
+library(tidyverse)
 
 # 1. load the data --------------------------------------------------------
 
