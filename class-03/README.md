@@ -1,8 +1,9 @@
 # README
 
-__Main data source:__ World Bank [World Development Indicators][wdi], 2022-2023, retrieved with the `WDI` R package by Vincent Arel-Bundock.
+__Main data source:__ World Bank [World Development Indicators][wdi], 2022-2023, retrieved with the [`WDI` R package][wdi-pkg] by Vincent Arel-Bundock.
 
 [wdi]: https://databank.worldbank.org/source/world-development-indicators
+[wdi-pkg]: https://vincentarelbundock.github.io/WDI/
 
 __Data source for continents and regions:__ `countrycode` (by the same author).
 

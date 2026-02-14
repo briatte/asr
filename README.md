@@ -46,7 +46,7 @@ Software setup, first steps with coding, handling data, and plotting things.
   - Objects and assignment: `<-`
   - Package installation
 
-`>` Demo 1: __[Cholera deaths in London, 1854][d1]__ (John Snow)  
+`>` Class 1: __[Cholera deaths in London, 1854][d1]__ (John Snow)  
 `>` Exercise 1: __[Support for Ukraine joining the EU][x1]__ (Eurobarometer)
 
 [d1]: https://github.com/briatte/asr/tree/master/class-01
@@ -82,7 +82,7 @@ Software setup, first steps with coding, handling data, and plotting things.
  - Data manipulation on multiple datasets
    - __joining__ (merging) two datasets: `full_join`, `left_join` and the like
 
-`>` Demo 2: __[Support for the implementation of sharia law][d2]__ (WVS)  
+`>` Class 2: __[Support for the implementation of sharia law][d2]__ (WVS)  
 `>` Exercise 2: __[U.S. adult obesity][x2]__ (U.S. NHIS)
 
 [d2]: https://github.com/briatte/asr/tree/master/class-02
@@ -99,7 +99,7 @@ Software setup, first steps with coding, handling data, and plotting things.
   - Normality assessment
   - Logarithmic transformations
 
-`>` Demo 3: __[Life expectancy and GDP/capita][d3]__ (World Bank)  
+`>` Class 3: __[Life expectancy and GDP/capita][d3]__ (World Bank)  
 `>` Exercise 3: __[U.S. adult obesity, continued][x3]__ (U.S. NHIS)
 
 [d3]: https://github.com/briatte/asr/tree/master/class-03

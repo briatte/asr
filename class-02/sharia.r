@@ -14,13 +14,16 @@
 
 library(tidyverse) # this loads some of the packages below (and more)
 
-# useful packages within the tidyverse:
+# useful packages included in the tidyverse:
 
 library(dplyr)   # transform data
 library(ggplot2) # visualize data
 library(haven)   # open Stata datasets
 library(readr)   # open CSV / plain text datasets
 library(readxl)  # open Microsoft Excel datasets
+
+# some will have been loaded by default
+# others require being loaded or called directly
 
 # how to open a CSV dataset -----------------------------------------------
 
