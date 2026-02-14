@@ -29,8 +29,8 @@ library(tidyverse)
 # https://europa.eu/eurobarometer/surveys/detail/2772
 # https://search.gesis.org/research_data/ZA7871
 
-# open the Flash Eurobarometer data (provided in Stata format)
-eb <- haven::read_dta("data/ZA7871_v1-0-0.dta")
+# open the Flash Eurobarometer data (provided in zipped Stata format)
+eb <- haven::read_dta("data/ZA7871_v1-0-0.dta.zip")
 
 # prepare the data of interest --------------------------------------------
 
