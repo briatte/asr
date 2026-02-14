@@ -121,13 +121,16 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 5. Association (continued)
 
-`>` Demo 5: __[Acceptability of torture, continued][d5]__ (ESS)  
-`>` Exercise 5: __[...][x5]__ <!(GSS)>
+- __cross-tabulations__
+- __Chi-squared tests__
 
-<!-- PROJECT INSTRUCTIONS + TEMPLATE -->
+The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA), but we do not properly delve into the topic.
+
+`>` Class 5: __[Acceptability of torture][d5]__ (ESS)  
+`>` Exercise 5: _listed at the end of class 5_
 
 [d5]: https://github.com/briatte/asr/tree/master/class-05
-[x5]: https://github.com/briatte/asr/tree/master/exercise-05
+<!-- [x5]: https://github.com/briatte/asr/tree/master/exercise-05 -->
 
 ## 6. Regression
 
@@ -139,13 +142,13 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 7. Regression (continued)
 
-`>` Demo 7: __[...][d7]__ (...)  
-`>` Exercise 7: __[...][x7]__ (...)
+`>` Class 7: __[Acceptability of torture, continued][d7]__ (ESS)  
+`>` _Wrap-up_
 
-<!-- FINAL INSTRUCTIONS -->
+<!-- FINAL DEMO = EXAMPLE PROJECT -->
 
 [d7]: https://github.com/briatte/asr/tree/master/class-07
-[x7]: https://github.com/briatte/asr/tree/master/exercise-07
+<!-- [x7]: https://github.com/briatte/asr/tree/master/exercise-07 -->
 
 * * *
 
