@@ -107,11 +107,17 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 4. Association
 
-`>` Demo 4: __[Colonial origin and GDP/capita][d4]__ (QOG)  
-`>` Exercise 4: __[Acceptability of torture][x4]__ (ESS)
+- estimation of __confidence intervals__
+- __comparison of means__ (_t_-tests)
+- _p_-values and __null hypothesis significance testing__
+
+`>` Class 4: __[Life expectancy and colonial origin][d4]__ (World Bank)  
+`>` Exercise 4: _listed at the end of class 4_
+
+<!-- DISTRIBUTE PROJECT INSTRUCTIONS + TEMPLATE -->
 
 [d4]: https://github.com/briatte/asr/tree/master/class-04
-[x4]: https://github.com/briatte/asr/tree/master/exercise-04
+<!-- [x4]: https://github.com/briatte/asr/tree/master/exercise-04 -->
 
 ## 5. Association (continued)
 
