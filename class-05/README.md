@@ -13,11 +13,17 @@ The `docs` contains information on [weighting the data][wgt] properly, which we 
 ```r
 library(tidyverse)
 
+# target filenames
+f <- "ESS4e04_6_extract.dta"
+z <- "ESS4e04_6_extract.dta.zip"
+
 # ESS Round 4 (downloaded)
 haven::read_dta("ESS4e04_6.zip") %>% 
   select(name, idno:anweight, agea, gndr, trrtort, lrscale) %>% 
-  haven::write_dta("ESS4e04_6_extract.dta")
+  haven::write_dta(f)
 
-zip("ESS4e04_6_extract.dta.zip", "ESS4e04_6_extract.dta")
-fs::file_delete("ESS4e04_6_extract.dta")
+# zip and move to `data` folder
+zip(z, f)
+fs::file_move(z, fs::path("data", z))
+fs::file_delete(f)
 ```

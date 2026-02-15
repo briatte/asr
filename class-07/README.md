@@ -13,11 +13,17 @@ Please refer to the docs from the `class-05` folder for the technical documentat
 ```r
 library(tidyverse)
 
+# target filenames
+f <- "ESS4e04_6_IL.dta"
+z <- "ESS4e04_6_IL.dta.zip"
+
 # ESS Round 4 (downloaded)
 haven::read_dta("ESS4e04_6.zip") %>% 
   filter(cntry == "IL") %>% 
-  haven::write_dta("ESS4e04_6_IL.dta")
+  haven::write_dta(f)
 
-zip("ESS4e04_6_IL.dta.zip", "ESS4e04_6_IL.dta")
-fs::file_delete("ESS4e04_6_IL.dta")
+# zip and move to `data` folder
+zip(z, f)
+fs::file_move(z, fs::path("data", z))
+fs::file_delete(f)
 ```

@@ -26,5 +26,5 @@ library(WDI)
               select(iso3c, births = SP.DYN.TFRT.IN),
             by = "iso3c") %>%
   drop_na(births, schooling) %>%
-  readr::write_tsv("fertility.tsv") # N = 144
+  readr::write_tsv("data/fertility.tsv") # N = 144
 ```
