@@ -86,7 +86,7 @@ ggplot(d, aes(gdpc)) +
   scale_x_log10() +
   labs(title = "GDP / capita (logged)")
 
-# apply log-transformation
+# apply log-10 transformation
 d$log_gdpc <- log10(d$gdpc)
 
 # visualize with a linear fit

@@ -22,7 +22,7 @@ d <- readr::read_tsv("data/life-expectancy.tsv")
 summary(d$lexp)
 
 # log-transform GDP/capita (as explained last week)
-d$log_gdpc <- log10(d$gdpc)
+d$log_gdpc <- log(d$gdpc)
 
 # if you forgot why, check the distributions
 pivot_longer(select(d, gdpc, log_gdpc), everything(), values_to = "x") %>%
