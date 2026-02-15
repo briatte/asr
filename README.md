@@ -1,7 +1,7 @@
 # `>` Tutorials in Applied Stats with R and RStudio
 
 > [François Briatte](https://f.briatte.org/)  
-> Spring 2025. __Work in progress.__
+> Spring 2026. __Work in progress.__
 
 Teaching material for some tutorials in ~~applied statistics~~ data science with [R][r], [RStudio][rstudio], and the [`{tidyverse}`][tidyverse] packages, aimed at social science undergraduates with zero prior training in statistical computing whatsoever.
 
@@ -9,11 +9,11 @@ Teaching material for some tutorials in ~~applied statistics~~ data science with
 [rstudio]: https://posit.co/products/open-source/rstudio/
 [tidyverse]: https://www.tidyverse.org/
 
-The content is very much related to [this other course](https://github.com/briatte/dsr), which is aimed at slightly older students with more study time.
+The content is very much related to [this other course](https://github.com/briatte/dsr), which is aimed at slightly older students with more study time and marginally better computing skills.
 
 This folder contains the code, data and documentation of the examples used either during the practice sessions in class, or distributed as homework exercises. __Slides and exercise solutions are not included.__
 
-__Very much work in progress. The list of topics covered in each session, especially, is very tentative and subject to change.__
+__Very much work in progress.__ The list of topics covered in each session, especially, is very tentative and subject to change.
 
 # Outline
 
