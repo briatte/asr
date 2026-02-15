@@ -134,11 +134,16 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 
 ## 6. Regression
 
-`>` Demo 6: __[Fertility and education][d6]__ (QOG)  
-`>` Exercise 6: __[Fertility and education, continued][x6]__ (QOG)
+- __analysis of variance__ (ANOVA), again as a passing mention
+- __simple linear regression__ (OLS)
+  - coefficients and __goodness-of-fit__
+  - regression diagnostics: __residuals__
+
+`>` Class 6: __[Fertility and education][d6]__ (World Bank, Barro & Lee)  
+`>` Exercise 6: _listed at the end of class 6_
 
 [d6]: https://github.com/briatte/asr/tree/master/class-06
-[x6]: https://github.com/briatte/asr/tree/master/exercise-06
+<!-- [x6]: https://github.com/briatte/asr/tree/master/exercise-06 -->
 
 ## 7. Regression (continued)
 

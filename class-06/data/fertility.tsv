@@ -1,0 +1,145 @@
+iso3c	country	region	schooling	births
+DZA	Algeria	Middle East and North Africa	7.62	3.091
+BEN	Benin	Sub-Saharan Africa	4.225	5.32
+BWA	Botswana	Sub-Saharan Africa	10.199	3.008
+BDI	Burundi	Sub-Saharan Africa	2.921	5.695
+CMR	Cameroon	Sub-Saharan Africa	6.496	4.841
+CAF	Central African Republic	Sub-Saharan Africa	2.991	6.126
+COG	Congo	Sub-Saharan Africa	5.674	4.607
+EGY	Egypt	Middle East and North Africa	6.461	3.5
+GAB	Gabon	Sub-Saharan Africa	9.873	3.921
+GMB	Gambia	Sub-Saharan Africa	4.181	5.003
+GHA	Ghana	Sub-Saharan Africa	7.488	3.982
+CIV	Cote dIvoire	Sub-Saharan Africa	4.054	4.97
+KEN	Kenya	Sub-Saharan Africa	6.458	3.766
+LSO	Lesotho	Sub-Saharan Africa	7.413	3.217
+LBR	Liberia	Sub-Saharan Africa	3.664	4.523
+MWI	Malawi	Sub-Saharan Africa	5.119	4.384
+MLI	Mali	Sub-Saharan Africa	2.634	6.385
+MRT	Mauritania	Sub-Saharan Africa	4.454	5.211
+MUS	Mauritius	Sub-Saharan Africa	9.714	1.36
+MAR	Morocco	Middle East and North Africa	5.171	2.406
+MOZ	Mozambique	Sub-Saharan Africa	3.42	5.245
+NER	Niger	Sub-Saharan Africa	1.819	7.215
+RWA	Rwanda	Sub-Saharan Africa	5.278	4.108
+SEN	Senegal	Sub-Saharan Africa	2.831	4.751
+SLE	Sierra Leone	Sub-Saharan Africa	3.563	4.548
+ZAF	South Africa	Sub-Saharan Africa	10.258	2.359
+SDN	Sudan	Sub-Saharan Africa	3.917	4.898
+SWZ	Swaziland	Sub-Saharan Africa	5.86	3.122
+TZA	United Republic of Tanzania	Sub-Saharan Africa	6.194	5.025
+TGO	Togo	Sub-Saharan Africa	5.768	4.662
+TUN	Tunisia	Middle East and North Africa	7.959	2.306
+UGA	Uganda	Sub-Saharan Africa	5.26	5.251
+COD	Democratic Republic of the Congo	Sub-Saharan Africa	5.469	6.437
+ZMB	Zambia	Sub-Saharan Africa	7.67	4.775
+ZWE	Zimbabwe	Sub-Saharan Africa	7.811	3.911
+BRB	Barbados	Latin America and the Caribbean	10.148	1.726
+CAN	Canada	Advanced Economies	13.097	1.6
+CRI	Costa Rica	Latin America and the Caribbean	8.759	1.797
+DOM	Dominican Rep.	Latin America and the Caribbean	10.127	2.43
+SLV	El Salvador	Latin America and the Caribbean	7.549	2.067
+GTM	Guatemala	Latin America and the Caribbean	5.407	3.029
+HTI	Haiti	Latin America and the Caribbean	4.42	3.11
+HND	Honduras	Latin America and the Caribbean	7.246	2.746
+JAM	Jamaica	Latin America and the Caribbean	10.799	1.508
+MEX	Mexico	Latin America and the Caribbean	8.992	2.137
+NIC	Nicaragua	Latin America and the Caribbean	7.829	2.434
+PAN	Panama	Latin America and the Caribbean	10.338	2.53
+TTO	Trinidad and Tobago	Latin America and the Caribbean	11.29	1.598
+USA	USA	Advanced Economies	13.306	1.8435
+ARG	Argentina	Latin America and the Caribbean	10.43	2.35
+BOL	Bolivia	Latin America and the Caribbean	9.364	2.886
+BRA	Brazil	Latin America and the Caribbean	8.829	1.777
+CHL	Chile	Latin America and the Caribbean	10.543	1.737
+COL	Colombia	Latin America and the Caribbean	9.492	1.771
+ECU	Ecuador	Latin America and the Caribbean	9.297	2.209
+GUY	Guyana	Latin America and the Caribbean	9.504	2.667
+PRY	Paraguay	Latin America and the Caribbean	8.822	2.645
+PER	Peru	Latin America and the Caribbean	9.666	2.229
+URY	Uruguay	Latin America and the Caribbean	9.259	2.041
+VEN	Venezuela	Latin America and the Caribbean	10.657	2.253
+AFG	Afghanistan	South Asia	3.199	5.652
+BHR	Bahrain	Middle East and North Africa	9.256	2.113
+BGD	Bangladesh	South Asia	6.783	2.227
+MMR	Myanmar	East Asia and the Pacific	5.861	2.266
+CHN	China	East Asia and the Pacific	8.347	1.67
+HKG	China, Hong Kong Special Administrative Region	East Asia and the Pacific	12.338	1.196
+IND	India	South Asia	6.122	2.289
+IDN	Indonesia	East Asia and the Pacific	8.417	2.346
+IRN	Iran (Islamic Republic of)	Middle East and North Africa	9.217	2.017
+IRQ	Iraq	Middle East and North Africa	6.933	4.08
+ISR	Israel	Middle East and North Africa	12.763	3.09
+JPN	Japan	Advanced Economies	13.036	1.45
+JOR	Jordan	Middle East and North Africa	10.017	3.141
+KOR	Republic of Korea	East Asia and the Pacific	12.522	1.239
+KWT	Kuwait	Middle East and North Africa	7.565	2.03
+MYS	Malaysia	East Asia and the Pacific	11.364	2.008
+NPL	Nepal	South Asia	4.895	2.273
+PAK	Pakistan	South Asia	4.911	3.988
+PHL	Philippines	East Asia and the Pacific	9.365	2.829
+SAU	Saudi Arabia	Middle East and North Africa	9.572	2.63
+SGP	Singapore	East Asia and the Pacific	12.742	1.24
+LKA	Sri Lanka	South Asia	11.189	2.09
+SYR	Syrian Arab Republic	Middle East and North Africa	7.053	3.067
+THA	Thailand	East Asia and the Pacific	8.717	1.451
+ARE	United Arab Emirates	Middle East and North Africa	11.358	1.417
+YEM	Yemen	Middle East and North Africa	3.341	4.617
+AUT	Austria	Advanced Economies	10.452	1.49
+BEL	Belgium	Advanced Economies	11.763	1.7
+CYP	Cyprus	Middle East and North Africa	12.088	1.323
+DNK	Denmark	Advanced Economies	13.203	1.71
+FIN	Finland	Advanced Economies	11.576	1.65
+FRA	France	Advanced Economies	10.471	1.96
+GRC	Greece	Advanced Economies	11.21	1.33
+HUN	Hungary	Europe and Central Asia	12.076	1.45
+ISL	Iceland	Advanced Economies	10.302	1.8
+IRL	Ireland	Advanced Economies	12.67	1.85
+ITA	Italy	Advanced Economies	11.134	1.36
+LUX	Luxembourg	Advanced Economies	11.924	1.47
+MLT	Malta	Middle East and North Africa	11.811	1.37
+NLD	Netherlands	Advanced Economies	11.786	1.66
+NOR	Norway	Advanced Economies	12.86	1.72
+POL	Poland	Europe and Central Asia	11.944	1.32
+PRT	Portugal	Advanced Economies	9.818	1.31
+ESP	Spain	Advanced Economies	11.103	1.33
+SWE	Sweden	Advanced Economies	12.286	1.85
+CHE	Switzerland	Advanced Economies	11.972	1.54
+TUR	Turkey	Advanced Economies	7.28	2.16
+GBR	United Kingdom	Advanced Economies	12.861	1.8
+AUS	Australia	Advanced Economies	12.511	1.814
+FJI	Fiji	East Asia and the Pacific	10.454	2.567
+NZL	New Zealand	Advanced Economies	11.274	1.99
+PNG	Papua New Guinea	East Asia and the Pacific	4.028	3.558
+TON	Tonga	East Asia and the Pacific	11.425	3.54
+LBY	Libyan Arab Jamahiriya	Middle East and North Africa	10.593	2.711
+NAM	Namibia	Sub-Saharan Africa	7.234	3.604
+BLZ	Belize	Latin America and the Caribbean	11.33	2.433
+BRN	Brunei Darussalam	East Asia and the Pacific	9.134	1.947
+BGR	Bulgaria	Europe and Central Asia	11.333	1.64
+CZE	Czech Republic	Europe and Central Asia	12.945	1.57
+ROU	Romania	Europe and Central Asia	11.371	1.62
+RUS	Russian Federation	Europe and Central Asia	12.132	1.777
+CUB	Cuba	Latin America and the Caribbean	11.299	1.685
+ALB	Albania	Europe and Central Asia	10.822	1.631
+SVK	Slovakia	Europe and Central Asia	12.128	1.4
+DEU	Germany	Advanced Economies	12.203	1.5
+ARM	Armenia	Europe and Central Asia	11.884	1.6
+KHM	Cambodia	East Asia and the Pacific	4.207	2.729
+KAZ	Kazakhstan	Europe and Central Asia	11.478	2.755
+KGZ	Kyrgyzstan	Europe and Central Asia	11.107	3.2
+LAO	Lao People's Democratic Republic	East Asia and the Pacific	5.965	2.796
+MDV	Maldives	South Asia	7.297	2.004
+MNG	Mongolia	East Asia and the Pacific	10.171	3
+QAT	Qatar	Middle East and North Africa	10.775	1.976
+TJK	Tajikistan	Europe and Central Asia	10.658	3.459
+VNM	Viet Nam	East Asia and the Pacific	7.45	2.1
+HRV	Croatia	Europe and Central Asia	12.01	1.41
+EST	Estonia	Europe and Central Asia	12.792	1.58
+LVA	Latvia	Europe and Central Asia	12.098	1.7
+LTU	Lithuania	Europe and Central Asia	12.01	1.63
+MDA	Republic of Moldova	Europe and Central Asia	11.339	1.87
+SRB	Serbia	Europe and Central Asia	11.622	1.46
+SVN	Slovenia	Europe and Central Asia	12.333	1.57
+MAC	China, Macao Special Administrative Region	East Asia and the Pacific	9.674	1.142
+UKR	Ukraine	Europe and Central Asia	11.735	1.387
