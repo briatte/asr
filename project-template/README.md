@@ -8,7 +8,7 @@ Using data from the [U.S. National Health Interview Survey][nhis], we show that 
 
 [nhis]: https://www.cdc.gov/nchs/nhis/index.html
 
-![](plots/health_by_race.pdf)
+![](plots/health_by_race.png)
 
 We further show that these differences are not attributable to age and sex, but that they rather seem to originate in the racial earnings gap, with Black females, in particular, being far less represented in the U.S. middle and upper [income classes][income].
 
