@@ -111,7 +111,7 @@ Software setup, first steps with coding, handling data, and plotting things.
 - __comparison of means__ (_t_-tests)
 - _p_-values and __null hypothesis significance testing__
 
-`>` Class 4: __[Life expectancy and colonial origin][d4]__ (World Bank)  
+`>` Class 4: __[Life expectancy and colonial origin][d4]__ (World Bank, QOG)  
 `>` Exercise 4: _listed at the end of class 4_
 
 <!-- DISTRIBUTE PROJECT INSTRUCTIONS + TEMPLATE -->
@@ -148,9 +148,10 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 ## 7. Regression (continued)
 
 `>` Class 7: __[Acceptability of torture, continued][d7]__ (ESS)  
-`>` _Wrap-up_
+`>` _Wrap-up: projects, exams etc._
 
-<!-- FINAL DEMO = EXAMPLE PROJECT -->
+<!-- WEEK 8 PPE = PROJECT PRESENTATIONS -->
+<!-- WEEK 8 RI = EXAM REVISIONS -->
 
 [d7]: https://github.com/briatte/asr/tree/master/class-07
 <!-- [x7]: https://github.com/briatte/asr/tree/master/exercise-07 -->
