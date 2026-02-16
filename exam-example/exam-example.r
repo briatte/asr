@@ -15,6 +15,7 @@
 # packages (do not modify)
 
 library(broom)
+library(haven)
 library(texreg)
 library(tidyverse)
 
