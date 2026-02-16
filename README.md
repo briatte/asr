@@ -42,7 +42,7 @@ Software setup, first steps with coding, handling data, and plotting things.
   - Executing code from a script: `Ctrl-Enter`
 - __R syntax__
   - Comments (`#`) and code
-  - Functions and arguments, e.g. `sum`, `round`
+  - Functions and arguments, e.g. `sum`, `round`, `x^k`, `sqrt`, `x:y`
   - Objects and assignment: `<-`
   - Package installation, with RStudio or with `install.packages`
 
@@ -69,7 +69,7 @@ Software setup, first steps with coding, handling data, and plotting things.
     - reading/writing datasets with `{readr}`, `{haven}` and `{readxl}`
     - inspecting datasets: print, `glimpse`, `view`
     - using __factors__ ('labelled' variables) with esp. survey data
-    - strings and other special formats, e.g. dates (passing mention)
+    - __strings__ and other special formats, e.g. dates (passing mention)
   - Data manipulation on a single dataset
     - __selecting__ variables: `$`, `select`
     - __sorting__ (ordering): `arrange`
@@ -90,14 +90,16 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 3. Visualization
 
-- __Data visualization__, mostly with the `{ggplot2}` package
-  - Principles of data abstraction
-  - Plotting engines
-  - The ‘grammar of graphics’ approach
+- __Data visualization__, almost exclusively with the `{ggplot2}` package
+  - Principles of data abstraction and plotting engines
+  - The ‘grammar of graphics’ approach: `ggplot`, `aes`, `geom_*`, etc.
+  - Histograms, density curves, bar plots, scatterplots
+  - Maps with the `{sf}` + `{ggplot2}` packages
 - __Descriptive statistics__ (central tendency, dispersion)
+  - For continuous variables: `summary`, `mean`, `sd`, `range` / `min` / `max`
   - Variable standardization (_z_-scores)
-  - Normality assessment
-  - Logarithmic transformations
+  - Normality assessment (visually)
+  - Logarithmic transformations: `log`, `log10`, `exp`
 
 `>` Class 3: __[Life expectancy and GDP/capita][d3]__ (World Bank)  
 `>` Exercise 3: __[U.S. adult obesity, continued][x3]__ (U.S. NHIS)
@@ -108,8 +110,7 @@ Software setup, first steps with coding, handling data, and plotting things.
 ## 4. Association
 
 - estimation of 95% __confidence intervals__
-- breaking 
-- __comparison of means__ (_t_-tests)
+- __comparison of means__ (_t_-tests): `t.test`
 - _p_-values and __null hypothesis significance testing__
 
 `>` Class 4: __[Life expectancy and colonial origin][d4]__ (World Bank, QOG)  
@@ -123,7 +124,7 @@ Software setup, first steps with coding, handling data, and plotting things.
 ## 5. Association (continued)
 
 - __cross-tabulations__ and row/column percentages: `table` and `prop.table`
-- __Chi-squared tests__
+- __Chi-squared tests__ on crosstabs: `chisq.test`
 
 The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA), but we do not properly delve into the topic.
 
@@ -135,11 +136,12 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 
 ## 6. Regression
 
-- __analysis of variance__ (ANOVA), again as a passing mention
-- __simple linear regression__ (OLS)
+- __analysis of variance__ (ANOVA), again as a passing mention: `aov`
+- __simple linear regression__ (OLS): `lm` + `summary`
   - coefficients and __goodness-of-fit__
   - regression diagnostics: __residuals__
-  - comparing models
+  - using the `{broom}` package to access results: `tidy`, `augment`
+  - using the `{texreg}` package to present models: `screenreg`
 
 `>` Class 6: __[Fertility and education][d6]__ (World Bank, Barro & Lee)  
 `>` Exercise 6: _listed at the end of class 6_
@@ -152,11 +154,11 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 - revisions and extensions
   - survey data, variable recodes, bar plots, small multiples with `facet_wrap`
   - more ways to break things down by groups: `count`, `aggregate`
-- __categorical predictors__ (dummies) in regression results
+  - __categorical predictors__ (dummies) in regression results
 - more advanced topics (passing mentions):
   - multiple linear regression
-  - generalized linear models (logistic regression and beyond)
-  - survey-weighted regression
+  - generalized linear models: `glm` (logistic regression and beyond)
+  - survey-weighted regression with the `{survey}` package
 
 `>` Class 7: __[Acceptability of torture, continued][d7]__ (ESS)  
 `>` _Wrap-up: projects, exams etc._
