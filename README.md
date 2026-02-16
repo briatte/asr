@@ -42,9 +42,9 @@ Software setup, first steps with coding, handling data, and plotting things.
   - Executing code from a script: `Ctrl-Enter`
 - __R syntax__
   - Comments (`#`) and code
-  - Functions and arguments
+  - Functions and arguments, e.g. `sum`, `round`
   - Objects and assignment: `<-`
-  - Package installation
+  - Package installation, with RStudio or with `install.packages`
 
 `>` Class 1: __[Cholera deaths in London, 1854][d1]__ (John Snow)  
 `>` Exercise 1: __[Support for Ukraine joining the EU][x1]__ (Eurobarometer)
@@ -67,9 +67,9 @@ Software setup, first steps with coding, handling data, and plotting things.
 - __Data wrangling__, mostly with the `{dplyr}` package
   - __Data I/O__
     - reading/writing datasets with `{readr}`, `{haven}` and `{readxl}`
-    - inspecting datasets: `head`, `glimpse`, `view`
+    - inspecting datasets: print, `glimpse`, `view`
     - using __factors__ ('labelled' variables) with esp. survey data
-    - passing mentions -- strings and other special formats, e.g. dates
+    - strings and other special formats, e.g. dates (passing mention)
   - Data manipulation on a single dataset
     - __selecting__ variables: `$`, `select`
     - __sorting__ (ordering): `arrange`
@@ -90,11 +90,11 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 3. Visualization
 
-- Data visualization, mostly with the `{ggplot2}` package
+- __Data visualization__, mostly with the `{ggplot2}` package
   - Principles of data abstraction
   - Plotting engines
   - The ‘grammar of graphics’ approach
-- Descriptive statistics (central tendency, dispersion)
+- __Descriptive statistics__ (central tendency, dispersion)
   - Variable standardization (_z_-scores)
   - Normality assessment
   - Logarithmic transformations
@@ -107,7 +107,8 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 4. Association
 
-- estimation of __confidence intervals__
+- estimation of 95% __confidence intervals__
+- breaking 
 - __comparison of means__ (_t_-tests)
 - _p_-values and __null hypothesis significance testing__
 
@@ -121,7 +122,7 @@ Software setup, first steps with coding, handling data, and plotting things.
 
 ## 5. Association (continued)
 
-- __cross-tabulations__
+- __cross-tabulations__ and row/column percentages: `table` and `prop.table`
 - __Chi-squared tests__
 
 The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA), but we do not properly delve into the topic.
@@ -138,6 +139,7 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 - __simple linear regression__ (OLS)
   - coefficients and __goodness-of-fit__
   - regression diagnostics: __residuals__
+  - comparing models
 
 `>` Class 6: __[Fertility and education][d6]__ (World Bank, Barro & Lee)  
 `>` Exercise 6: _listed at the end of class 6_
@@ -146,6 +148,15 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 <!-- [x6]: https://github.com/briatte/asr/tree/master/exercise-06 -->
 
 ## 7. Regression (continued)
+
+- revisions and extensions
+  - survey data, variable recodes, bar plots, small multiples with `facet_wrap`
+  - more ways to break things down by groups: `count`, `aggregate`
+- __categorical predictors__ (dummies) in regression results
+- more advanced topics (passing mentions):
+  - multiple linear regression
+  - generalized linear models (logistic regression and beyond)
+  - survey-weighted regression
 
 `>` Class 7: __[Acceptability of torture, continued][d7]__ (ESS)  
 `>` _Wrap-up: projects, exams etc._
