@@ -26,9 +26,17 @@ __Very much work in progress.__ The list of topics covered in each session, espe
 5. [Association (continued)](#5-association-continued)
 6. [Regression](#6-regression)
 7. [Regression (continued)](#7-regression-continued)
-8. Wrap-up
+8. _Wrap-up (or class presentations)_
 
 Bonus section: [dependencies](#dependencies)
+
+Bonus documents:
+
+- [What to learn and to revise for the tutorials][revise]
+- [Survey research project instructions][projects]
+
+[revise]: https://docs.google.com/document/d/1QxZUho_ZmsdlIJZ5x87sijz3f6JGiq7t-S_S2bd6NBg/edit?usp=sharing
+[projects]: https://docs.google.com/document/d/1pTb-IY5qYQvIURK8PJItLBQjRzCnMlO7YHOrDOPJZq8/edit?usp=sharing
 
 # Part 1. Basics
 
