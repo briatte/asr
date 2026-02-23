@@ -30,6 +30,12 @@ count(d, region) %>%
 # correlation between fertility and female education
 with(d, cor(births, schooling))
 
+# the above is equivalent to writing this
+cor(d$births, d$schooling)
+
+# if any of the variables contain missing values, use this option
+cor(d$births, d$schooling, use = "complete")
+
 # region-level summary statistics and correlations
 group_by(d, region) %>%
   summarise(n = n(), mu_births = mean(births), mu_schooling = mean(schooling),
@@ -42,8 +48,16 @@ ggplot(d, aes(y = births, x = schooling)) +
   geom_rug(size = 1, alpha = 1/4) +
   geom_text(aes(label = iso3c))
 
+# show variable means, which are used to compute their correlation
+ggplot(d, aes(y = births, x = schooling)) +
+  geom_hline(yintercept = mean(d$births), lty = "dashed") +
+  geom_vline(xintercept = mean(d$schooling), lty = "dashed") +
+  geom_text(aes(label = iso3c))
+
 # add a linear fit to the plot
 ggplot(d, aes(y = births, x = schooling)) +
+  geom_hline(yintercept = mean(d$births), lty = "dashed") +
+  geom_vline(xintercept = mean(d$schooling), lty = "dashed") +
   geom_smooth(method = "lm") +
   geom_text(aes(label = iso3c))
 
