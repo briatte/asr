@@ -138,6 +138,36 @@ aggregate(support_torture ~ religion + age_group + sex, mean, data = il) %>%
   facet_wrap(~ sex + religion, nrow = 1) +
   labs(x = NULL, y = "% support for torture")
 
+# (simple) linear regression with dummies ---------------------------------
+
+# be reminded that higher values of `trrtort` indicate more support for torture
+haven::print_labels(il$trrtort)
+
+# let's model the initial variable as a function of sex
+summary(lm(trrtort ~ sex, data = il))
+
+# to understand what the results mean, here's average support for torture for
+# females, which is the same as the intercept in the model above
+mean_for_females <- mean(il$trrtort[ il$sex == "Female" ], na.rm = TRUE)
+mean_for_females
+
+# males expressed marginally more support for torture on average
+mean_for_males <- mean(il$trrtort[ il$sex == "Male" ], na.rm = TRUE)
+mean_for_males
+
+# the coefficient in the model above is the difference between both sexes
+mean_for_males - mean_for_females
+
+# females do not appear in the model because they are treated as the 'baseline'
+# or 'reference category' of the model (R uses the first level of `sex` as the
+# baseline by default, which here is 'Female' by alphabetical order)
+
+# repeat with age groups (baseline = first age group, 15-34 year-old)
+summary(lm(trrtort ~ age_group, data = il))
+
+# repeat with religion (baseline = first denomination, Christian)
+summary(lm(trrtort ~ religion, data = il))
+
 # (multiple) linear regression --------------------------------------------
 
 # on top of not being statistically significant, the differences in attitudes
@@ -152,6 +182,9 @@ summary(lm(trrtort ~ sex + age_group + religion, data = il))
 survey::svydesign(~ idno, probs = ~ anweight, data = il) %>%
   survey::svyglm(trrtort ~ sex + age_group + religion, design = .) %>%
   summary()
+
+# in the models above, the baseline is young (15-34) Christian females, based
+# on the first levels of all categorical predictors included
 
 # there are even more appropriate ways to estimate that model, but the above is
 # already much more advanced than what we intend to cover in these tutorials
