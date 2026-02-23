@@ -112,7 +112,7 @@ _Note that joining datasets is already more advanced than what we wish to cover.
 - __Descriptive statistics__ (central tendency, dispersion)
   - For continuous variables: `summary`, `mean`, `sd`, `range` / `min` / `max`
   - Variable standardization (_z_-scores)
-  - Normality assessment (visually)
+  - The normal distribution, and (visual) normality assessment
   - Logarithmic transformations: `log`, `log10`, `exp`
 
 _Note that, just like last week, visualization in this course will occasionally involve using advanced functions provided by the `{ggrepel}` and `{sf}` packages, but that these are outside of the revision scope. The same goes for the most advanced `{ggplot2}` functions, which will be shown only for demo purposes._
