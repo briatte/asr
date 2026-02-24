@@ -45,15 +45,15 @@ Software setup, first steps with coding, handling data, and plotting things, plu
 ## 1. Software
 
 - __RStudio interface__
-  - The panes layout
-  - Setting preferences
-  - Executing code from the Console
-  - Clearing the Console: `Ctrl-L`
-  - Executing code from a script: `Ctrl-Enter`
+  - The panes layout -- Console, Files, Plots
+  - Setting RStudio preferences
+  - Executing code from the __Console__
+  - Clearing the Console with `Ctrl-L`
+  - Executing code from a __script__ with `Ctrl-Enter`
 - __R syntax__
   - Comments (`#`) and code
-  - Functions and arguments, e.g. `sum`, `round`, `x^k`, `sqrt`, `x:y`
-  - Objects and assignment: `<-`
+  - Functions and arguments, e.g. `round`, `x^k`, `sqrt`, `x:y`, `sum`, `mean`
+  - Objects and assignment: `x <- 2`
   - Package installation, with RStudio or with `install.packages`
 
 `>` Class 1: __[Cholera deaths in London, 1854][d1]__ (John Snow)  
@@ -72,9 +72,9 @@ _This README does not include links to the data sources, but these are provided 
   - The Files and Plots panes
   - Executing code down to a given line: `Ctrl-Alt-B`
 - More R syntax essentials
-  - Code spanning multiple lines, and pipes: `%>%`, `|>`
+  - Code spanning multiple lines, and pipes: `%>%` or `|>`
   - R objects and types
-  - Datasets (a.k.a. ‘data frames’ or ‘tibbles’), variables and values
+  - Datasets (a.k.a. ‘data frames’ or ‘tibbles’), observations, variables and values
   - R has many packages and sub-syntaxes: base, `{tidyverse}`, `{ggplot2}`, etc.
 - __Data wrangling__, mostly with the `{dplyr}` package
   - __Data I/O__
@@ -83,14 +83,15 @@ _This README does not include links to the data sources, but these are provided 
     - using __factors__ ('labelled' variables) with esp. survey data
     - __strings__ and other special formats, e.g. dates (passing mention)
   - Data manipulation on a single dataset
-    - __selecting__ variables: `$`, `select`
+    - __selecting__ variables: `data$variable`, `select`
     - __sorting__ (ordering): `arrange`
     - __subsetting__ (filtering) observations: `filter`
+    - __counting__ values: `count`
     - __aggregating and summarising__ values: `group_by` + `summarise`
   - Recoding and transforming values: `mutate`
     - __'if/else'__ recodes: `if_else` and `case_when`
+    - handling __missing values__ (`NA`): `is.na`, `na_if` and `drop_na`
     - type coercion/conversion: `as.numeric`, `as.integer` etc.
-    - handling __missing values__ (`NA`): `is.na`, `na_if`, `drop_na`
  - Data manipulation on multiple datasets
    - __joining__ (merging) two datasets: `full_join`, `left_join` and the like
 
@@ -112,7 +113,7 @@ _Note that joining datasets is already more advanced than what we wish to cover.
 - __Descriptive statistics__ (central tendency, dispersion)
   - For continuous variables: `summary`, `mean`, `sd`, `range` / `min` / `max`
   - Variable standardization (_z_-scores)
-  - The normal distribution, and (visual) normality assessment
+  - Normality assessment (i.e. comparison to the normal distribution)
   - Logarithmic transformations: `log`, `log10`, `exp`
 
 _Note that, just like last week, visualization in this course will occasionally involve using advanced functions provided by the `{ggrepel}` and `{sf}` packages, but that these are outside of the revision scope. The same goes for the most advanced `{ggplot2}` functions, which will be shown only for demo purposes._
