@@ -13,6 +13,7 @@
 # required packages -------------------------------------------------------
 
 library(survey)
+library(texreg)
 library(tidyverse)
 
 # data preparation --------------------------------------------------------
@@ -174,17 +175,25 @@ summary(lm(trrtort ~ religion, data = il))
 # observed among religious groups might actually be attributable to different
 # underlying socio-demographics
 
-# let's model the initial variable as a function of religion while controlling
-# for age and sex, which is a more advanced model than what we have done so far
-summary(lm(trrtort ~ sex + age_group + religion, data = il))
+# let's save the initial models by age, by sex and by religion
+m1 <- lm(trrtort ~ sex, data = il)
+m2 <- lm(trrtort ~ age_group, data = il)
+m3 <- lm(trrtort ~ religion, data = il)
 
-# an arguably better model would also take survey weights into account
-survey::svydesign(~ idno, probs = ~ anweight, data = il) %>%
-  survey::svyglm(trrtort ~ sex + age_group + religion, design = .) %>%
-  summary()
+# let's now estimate support for torture as a function of religion, while also
+# controlling for socio-demographics (age and sex)
+m4 <- lm(trrtort ~ sex + age_group + religion, data = il)
 
-# in the models above, the baseline is young (15-34) Christian females, based
-# on the first levels of all categorical predictors included
+# an arguably better model would also take survey weights into account, so
+# let's re-estimate that model with these
+m5 <- survey::svydesign(~ idno, probs = ~ anweight, data = il) %>%
+  survey::svyglm(trrtort ~ sex + age_group + religion, design = .)
+
+# last, display and compare the results
+texreg::screenreg(list(m1, m2, m3, m4, m5), include.rmse = TRUE)
+
+# note: in the models above, the baseline is young (15-34) Christian females,
+# based on the first levels of all categorical predictors included
 
 # there are even more appropriate ways to estimate that model, but the above is
 # already much more advanced than what we intend to cover in these tutorials
