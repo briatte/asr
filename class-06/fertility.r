@@ -114,6 +114,7 @@ ggplot(broom::augment(lm(births ~ schooling, data = d), newdata = d),
 # plot(density(resid(m)))
 ggplot(broom::augment(m), aes(.resid)) +
   geom_density() +
+  geom_vline(xintercept = 0, lty = "dashed") +
   geom_rug()
 
 # root mean squared error (RMSE)
