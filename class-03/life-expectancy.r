@@ -118,7 +118,7 @@ ggplot(by_continent, aes(y = continent, x = mu_lifexp, fill = colonized)) +
 # an average, which it will compute for us; this avoids having to proceed in
 # two separate steps, as shown above (thanks Kevin for the reminder)
 
-ggplot(d , aes(x = continent, y = lexp)) +
+ggplot(d , aes(y = continent, x = lexp)) +
   geom_bar(stat = "summary", fun = "mean") +
   labs(title = "Average life expectancy per continent")
 
