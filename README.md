@@ -167,13 +167,13 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
   - __categorical predictors__ (dummies) in regression results
 - more advanced topics (passing mentions):
   - multiple linear regression
-  - generalized linear models: `glm` (logistic regression and beyond)
   - survey-weighted regression with the `{survey}` package
+  - if time permits, generalized linear models: `glm` (focused on logistic regression)
 
 `>` Class 7: __[Acceptability of torture, continued][d7]__ (ESS)  
 `>` Last documents: [final project template][proj] or [mock final exam][exam]
 
-_See next week for the meaning of the last documents. The final assessment is either-or -- students get to complete one or the other, not both._
+_See next week for the meaning of the last documents._
 
 [d7]: https://github.com/briatte/asr/tree/main/class-07
 
@@ -192,10 +192,10 @@ Bonus documents, distributed much earlier in the term:
 [revise]: https://docs.google.com/document/d/1QxZUho_ZmsdlIJZ5x87sijz3f6JGiq7t-S_S2bd6NBg/edit?usp=sharing
 [projects]: https://docs.google.com/document/d/1pTb-IY5qYQvIURK8PJItLBQjRzCnMlO7YHOrDOPJZq8/edit?usp=sharing
 
-`>` Class 8(a): [mock final exam][exam]
+`>` Class 8(a): [mock final exam][exam]  
 `>` Class 8(b): [final project template][proj]  
 
-_The eighth tutorial wraps things up and might include class presentations of the (draft) student projects. The lecture comes with its own exam. The total volume of teaching is around 40 hours._
+_The final assessment is either-or -- students get to complete one or the other, not both. The eighth tutorial wraps things up and includes class presentations of the (draft) student projects if that is the assessment option used. The lecture comes with its own exam in all cases. The total volume of teaching is around 40 hours, 24h lecture + 16h tutorials._
 
 * * *
 
