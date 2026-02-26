@@ -171,9 +171,9 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
   - survey-weighted regression with the `{survey}` package
 
 `>` Class 7: __[Acceptability of torture, continued][d7]__ (ESS)  
-`>` _Wrap-up: [final projects][proj], [final exam][exam] etc._
+`>` Last documents: [final project template][proj] or [mock final exam][exam]
 
-_The final assessment is either-or -- students get to complete one or the other, not both. The lecture comes with its own exam. The total volume of teaching is around 40 hours, with an eighth tutorial to further wrap up things and/or have class presentations of the student projects._
+_See next week for the meaning of the last documents. The final assessment is either-or -- students get to complete one or the other, not both._
 
 [d7]: https://github.com/briatte/asr/tree/main/class-07
 
@@ -184,13 +184,18 @@ _The final assessment is either-or -- students get to complete one or the other,
 
 ## 8. Wrap-up
 
-Bonus documents:
+Bonus documents, distributed much earlier in the term:
 
 - [What to learn and to revise for the tutorials][revise]
-- [Survey research project instructions][projects]
+- [Survey research project instructions][projects] (if relevant)
 
 [revise]: https://docs.google.com/document/d/1QxZUho_ZmsdlIJZ5x87sijz3f6JGiq7t-S_S2bd6NBg/edit?usp=sharing
 [projects]: https://docs.google.com/document/d/1pTb-IY5qYQvIURK8PJItLBQjRzCnMlO7YHOrDOPJZq8/edit?usp=sharing
+
+`>` Class 8(a): [mock final exam][exam]
+`>` Class 8(b): [final project template][proj]  
+
+_The eighth tutorial wraps things up and might include class presentations of the (draft) student projects. The lecture comes with its own exam. The total volume of teaching is around 40 hours._
 
 * * *
 
