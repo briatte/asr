@@ -2,7 +2,7 @@
 
 ___This is an example, ungraded exam. You do not need to submit it.___
 
-__Data source:__ [Quality of Government Basic Dataset][qog], time-series version, January 2026. The data have been restricted to selected variables and years. More information is available from the `docs` folder.
+__Data source:__ [Quality of Government Basic Dataset][qog], time-series version, January 2026. The data are restricted to selected variables and years. More information is available from the `docs` folder.
 
 [qog]: https://www.gu.se/en/quality-government/qog-data/data-downloads/basic-dataset
 
