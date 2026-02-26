@@ -4,7 +4,7 @@ ___This is an example, ungraded exam. You do not need to submit it.___
 
 __Data source:__ [Quality of Government Basic Dataset][qog], time-series version, January 2026. The data have been restricted to selected variables and years. More information is available from the `docs` folder.
 
-[qog]: https://www.gu.se/en/quality-government/qog-data/data-downloads/standard-dataset
+[qog]: https://www.gu.se/en/quality-government/qog-data/data-downloads/basic-dataset
 
 ## Instructions
 
@@ -56,5 +56,5 @@ All other student regulations apply.
 haven::read_dta("https://www.qogdata.pol.gu.se/data/qog_bas_ts_jan26.dta") %>% 
   select(ccodealp, cname, year, wdi_wip, wdi_gdpcapcon2015, ht_regtype) %>% 
   filter(year %in% seq(2012, max(year[ !is.na(ht_regtype) ]))) %>% 
-  haven::write_dta("data/qog_std_ts_jan26_extract.dta")
+  haven::write_dta("data/qog_bas_ts_jan26_extract.dta")
 ```
