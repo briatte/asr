@@ -14,6 +14,7 @@ __Data source:__ [Quality of Government Basic Dataset][qog], time-series version
 - do _not_ modify the numbered code sections
 - do _not_ modify the folder structure
 - __all answers go into the script directly__
+- __answer questions in their dedicated sections__
 
 When you are done, __submit your code__ (_after checking that it runs without errors -- see below_), __and nothing else.__ Do _not_ submit plots or the exam data, docs and folder.
 
@@ -49,6 +50,10 @@ All other student regulations apply.
     2. fit the same model to democracies and non-democracies separately
     3. compare the models and comment on their results
 9. plot the residuals of the model and interpret
+
+* * *
+
+Thank you for your work!
 
 ## R code to generate the data extract
 
