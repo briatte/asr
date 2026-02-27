@@ -15,7 +15,7 @@ The content is very much related to [this other course][dsr], which is aimed at 
 
 This folder contains the code, data and documentation of the examples used either during the practice sessions in class, or distributed as homework exercises. __Slides, exercise solutions and data documentation are not included.__
 
-__Very much work in progress.__ The list of topics covered in each session, especially, is subject to change. The ultimate goal of the course is to cover more or less the same content as Matt Blackwell's [Data Analysis and Politics](https://gov51.mattblackwell.org/) course.
+__Very much work in progress.__ The list of topics covered in each session, especially, is subject to change. The ultimate goal of the tutorials is to cover more or less the same ground as Matt Blackwell's [Data Analysis and Politics](https://gov51.mattblackwell.org/) course at Harvard University.
 
 # Outline
 
