@@ -30,6 +30,16 @@ __Very much work in progress.__ The list of topics covered in each session, espe
 
 Bonus section: [dependencies](#dependencies)
 
+Bonus documents:
+
+- [What to learn and to revise for the tutorials][revise]
+- [Survey research project instructions][projects] (if relevant)
+- [Troubleshooting][troubleshooting]
+
+[revise]: https://docs.google.com/document/d/1QxZUho_ZmsdlIJZ5x87sijz3f6JGiq7t-S_S2bd6NBg/edit?usp=sharing
+[projects]: https://docs.google.com/document/d/1pTb-IY5qYQvIURK8PJItLBQjRzCnMlO7YHOrDOPJZq8/edit?usp=sharing
+[troubleshooting]: https://docs.google.com/document/d/1_JZ48kJnAo4etDJbOeISbGRqMXDdsxpalppB7woEY7w/edit?usp=sharing
+
 # Part 1. Basics
 
 Software setup, first steps with coding, handling data, and plotting things, plus univariate stats.
@@ -188,9 +198,6 @@ Bonus documents, distributed much earlier in the term:
 
 - [What to learn and to revise for the tutorials][revise]
 - [Survey research project instructions][projects] (if relevant)
-
-[revise]: https://docs.google.com/document/d/1QxZUho_ZmsdlIJZ5x87sijz3f6JGiq7t-S_S2bd6NBg/edit?usp=sharing
-[projects]: https://docs.google.com/document/d/1pTb-IY5qYQvIURK8PJItLBQjRzCnMlO7YHOrDOPJZq8/edit?usp=sharing
 
 `>` Class 8(a): [mock final exam][exam]  
 `>` Class 8(b): [final project template][proj]  
