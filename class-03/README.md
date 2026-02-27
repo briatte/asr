@@ -7,9 +7,9 @@ __Main data source:__ World Bank [World Development Indicators][wdi], 2022-2023,
 
 __Data source for continents and regions:__ `countrycode` (by the same author).
 
-__Data source for colonial origin:__ [Quality of Government Standard Dataset][qog], 2026. Data are from years 2022-2023. See the codebook for precise data sources.
+__Data source for colonial origin:__ [Quality of Government Basic Dataset][qog], 2026. Data are from years 2022-2023. See the codebook for precise data sources.
 
-[qog]: https://www.gu.se/en/quality-government/qog-data/data-downloads/standard-dataset
+[qog]: https://www.gu.se/en/quality-government/qog-data/data-downloads/basic-dataset
 
 __Data source for shapefiles:__ [World Bank Official Boundaries][owb].
 
@@ -20,7 +20,7 @@ library(countrycode)
 library(tidyverse)
 library(WDI)
 # Quality of Government (c. 2022)
-full_join("https://www.qogdata.pol.gu.se/data/qog_std_cs_jan26.csv" %>%
+full_join("https://www.qogdata.pol.gu.se/data/qog_bas_cs_jan26.csv" %>%
             readr::read_csv() %>% 
             transmute(iso3c = countrycode(ccodealp, "iso3c", "iso3c"),
                       ht_colonial),
