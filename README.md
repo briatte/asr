@@ -76,15 +76,15 @@ _This README does not include links to the data sources, but these are provided 
 - More R syntax essentials
   - Code spanning multiple lines, and pipes: `%>%` or `|>`
   - R objects and types
-  - Datasets (a.k.a. ‘data frames’ or ‘tibbles’), observations, variables and values
+  - R datasets, a.k.a. ‘data frames’ or ‘tibbles’
   - R has many packages and sub-syntaxes: base, `{tidyverse}`, `{ggplot2}`, etc.
 - __Data wrangling__, mostly with the `{dplyr}` package
   - __Data I/O__
     - reading/writing datasets with `{readr}`, `{haven}` and `{readxl}`
     - inspecting datasets: `print`, `glimpse`, `view`
-    - using __labelled__ variables in esp. survey data: `print_labels`, `as_factor`
-    - using __factor__ variables: `factor` and `levels`
-    - __strings__ and other special formats, e.g. dates (passing mention)
+    - observations, variables and values
+    - __strings__ and other special formats, e.g. dates (passing mentions)
+    - __joining__ (merging) two datasets: `full_join`, `left_join` and the like
   - Data manipulation on a single dataset
     - __selecting__ variables: `$`, `select`
     - __sorting__ (ordering): `arrange`
@@ -95,8 +95,8 @@ _This README does not include links to the data sources, but these are provided 
     - __'if/else'__ recodes: `if_else` and `case_when`
     - handling __missing values__ (`NA`): `is.na`, `na_if` and `drop_na`
     - type coercion/conversion: `as.numeric`, `as.integer`, `as.character`
- - Data manipulation on multiple datasets
-   - __joining__ (merging) two datasets: `full_join`, `left_join` and the like
+    - using __labelled__ variables in esp. survey data: `print_labels`, `as_factor`
+    - using __factor__ variables: `factor` and `levels`
 
 _Note that joining datasets is already more advanced than what we wish to cover. We will occasionally use it, just like some of our examples will reshape datasets with `pivot_longer` or manipulate lists with `map`, but these are all outside of the revision scope._
 
@@ -110,7 +110,7 @@ _Note that joining datasets is already more advanced than what we wish to cover.
 
 - __Data visualization__, almost exclusively with the `{ggplot2}` package
   - Principles of data abstraction and plotting engines
-  - The ‘grammar of graphics’ approach: `ggplot`, `aes`, `geom_*`, `facet_wrap`, `labs`, etc.
+  - The ‘grammar of graphics’ approach: `ggplot`, `aes`, `geom_*`, `facet_wrap`, `labs`, …
   - Histograms, density curves, bar plots, scatterplots
   - Maps with the `{sf}` + `{ggplot2}` packages
 - __Descriptive statistics__ (central tendency, dispersion)
