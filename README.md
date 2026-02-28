@@ -55,7 +55,7 @@ Software setup, first steps with coding, handling data, and plotting things, plu
 - __R syntax__
   - Comments (`#`) and code
   - Functions and arguments, e.g. `round`, `x^k`, `sqrt`, `x:y`, `sum`, `mean`
-  - Objects and assignment: `x <- 2`
+  - Objects and assignment: `<-`
   - Package installation, with RStudio or with `install.packages`
 
 `>` Class 1: __[Cholera deaths in London, 1854][d1]__ (John Snow)  
@@ -81,19 +81,20 @@ _This README does not include links to the data sources, but these are provided 
 - __Data wrangling__, mostly with the `{dplyr}` package
   - __Data I/O__
     - reading/writing datasets with `{readr}`, `{haven}` and `{readxl}`
-    - inspecting datasets: print, `glimpse`, `view`
-    - using __factors__ ('labelled' variables) with esp. survey data
+    - inspecting datasets: `print`, `glimpse`, `view`
+    - using __labelled__ variables in esp. survey data: `print_labels`, `as_factor`
+    - using __factor__ variables: `factor` and `levels`
     - __strings__ and other special formats, e.g. dates (passing mention)
   - Data manipulation on a single dataset
-    - __selecting__ variables: `data$variable`, `select`
+    - __selecting__ variables: `$`, `select`
     - __sorting__ (ordering): `arrange`
     - __subsetting__ (filtering) observations: `filter`
-    - __counting__ values: `count`
+    - __counting__ or __summarising__ values: `table`, `count`, `summary`
     - __aggregating and summarising__ values: `group_by` + `summarise`
   - Recoding and transforming values: `mutate`
     - __'if/else'__ recodes: `if_else` and `case_when`
     - handling __missing values__ (`NA`): `is.na`, `na_if` and `drop_na`
-    - type coercion/conversion: `as.numeric`, `as.integer` etc.
+    - type coercion/conversion: `as.numeric`, `as.integer`, `as.character`
  - Data manipulation on multiple datasets
    - __joining__ (merging) two datasets: `full_join`, `left_join` and the like
 
@@ -109,14 +110,14 @@ _Note that joining datasets is already more advanced than what we wish to cover.
 
 - __Data visualization__, almost exclusively with the `{ggplot2}` package
   - Principles of data abstraction and plotting engines
-  - The ‘grammar of graphics’ approach: `ggplot`, `aes`, `geom_*`, etc.
+  - The ‘grammar of graphics’ approach: `ggplot`, `aes`, `geom_*`, `facet_wrap`, `labs`, etc.
   - Histograms, density curves, bar plots, scatterplots
   - Maps with the `{sf}` + `{ggplot2}` packages
 - __Descriptive statistics__ (central tendency, dispersion)
   - For continuous variables: `summary`, `mean`, `sd`, `range` / `min` / `max`
   - Variable standardization (_z_-scores)
   - Normality assessment (i.e. comparison to the normal distribution)
-  - Logarithmic transformations: `log`, `log10`, `exp`
+  - Logarithmic transformations with `log`
 
 _Note that, just like last week, visualization in this course will occasionally involve using advanced functions provided by the `{ggrepel}` and `{sf}` packages, but that these are outside of the revision scope. The same goes for the most advanced `{ggplot2}` functions, which will be shown only for demo purposes._
 
@@ -157,7 +158,7 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 
 ## 6. Regression
 
-- __analysis of variance__ (ANOVA), again as a passing mention: `aov`
+- __analysis of variance__ (ANOVA), again as a passing mention: `aov` + `summary`
 - __simple linear regression__ (OLS): `lm` + `summary`
   - coefficients and __goodness-of-fit__
   - regression diagnostics: __fitted values__ and __residuals__
@@ -173,7 +174,7 @@ The code contains a passing mention of (one-way) __analysis of variance__ (ANOVA
 
 - revisions and extensions
   - survey data, variable recodes, bar plots, small multiples with `facet_wrap`
-  - more ways to break things down by groups: `count`, `aggregate`
+  - breaking things down by groups: `count`, `aggregate`
   - __categorical predictors__ (dummies) in regression results
 - more advanced topics (passing mentions):
   - multiple linear regression
