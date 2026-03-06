@@ -77,6 +77,7 @@ _This README does not include links to the data sources, but these are provided 
   - Code spanning multiple lines, and pipes: `%>%` or `|>`
   - R objects and types
   - R datasets, a.k.a. ‘data frames’ or ‘tibbles’
+  - Logical tests: `TRUE` (=1) or `FALSE` (=0), `==`, `!=`, `>=` etc.
   - R has many packages and sub-syntaxes: base, `{tidyverse}`, `{ggplot2}`, etc.
 - __Data wrangling__, mostly with the `{dplyr}` package
   - __Data I/O__
@@ -124,6 +125,8 @@ _Note that, just like last week, visualization in this course will occasionally 
 `>` Class 3: __[Life expectancy and GDP/capita][d3]__ (World Bank)  
 `>` Exercise 3: __[U.S. adult obesity, continued][x3]__ (U.S. NHIS)
 
+_The code in the exercise for this session shows how to produce survey-weighted estimates with the `{survey}` package, but using the package is not a class requirement for graded work._
+
 [d3]: https://github.com/briatte/asr/tree/main/class-03
 [x3]: https://github.com/briatte/asr/tree/main/exercise-03
 
@@ -136,6 +139,7 @@ Basically, significance testing and an introduction to linear regression, to be 
 - estimation of 95% __confidence intervals__
 - __comparison of means__ (_t_-tests): `t.test`
 - _p_-values and __null hypothesis significance testing__
+- quick mention of scientific notation, e.g. `1e-7`
 
 `>` Class 4: __[Life expectancy and colonial origin][d4]__ (World Bank, QOG)  
 `>` Exercise 4: _listed at the end of class 4_
@@ -200,8 +204,8 @@ Bonus documents, distributed much earlier in the term:
 - [What to learn and to revise for the tutorials][revise]
 - [Survey research project instructions][projects] (if relevant)
 
-`>` Class 8(a): [mock final exam][exam]  
-`>` Class 8(b): [final project template][proj]  
+`>` Class 8(a): [mock final exam][exam] (QOG)  
+`>` Class 8(b): [final project template][proj] (U.S. NHIS)  
 
 _The final assessment is either-or -- students get to complete one or the other, not both. The eighth tutorial wraps things up and includes class presentations of the (draft) student projects if that is the assessment option used. The lecture comes with its own exam in all cases. The total volume of teaching is around 40 hours, 24h lecture + 16h tutorials._
 
