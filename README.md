@@ -3,7 +3,7 @@
 > [François Briatte](https://f.briatte.org/)  
 > Spring 2026. __Work in progress.__
 
-Teaching material for some tutorials in ~~applied statistics~~ data science with [R][r], [RStudio][rstudio], and the [`{tidyverse}`][tidyverse] packages, aimed at first-year social science undergraduates with zero prior training in statistical computing whatsoever.
+Teaching material for some tutorials in applied/introductory statistics with [R][r], [RStudio][rstudio], and the [`{tidyverse}`][tidyverse] packages, aimed at first-year social science undergraduates with zero prior training in statistical computing whatsoever.
 
 [r]: https://www.r-project.org/
 [rstudio]: https://posit.co/products/open-source/rstudio/
@@ -13,7 +13,7 @@ The content is very much related to [this other course][dsr], which is aimed at 
 
 [dsr]: https://github.com/briatte/dsr
 
-This folder contains the code, data and documentation of the examples used either during the practice sessions in class, or distributed as homework exercises. __Slides, exercise solutions and data documentation are not included.__
+This folder contains the code, data and documentation of the examples used either during the practice sessions in class, or distributed as homework exercises. __Class emails, slides, exercise solutions and data documentation are not included.__
 
 __Very much work in progress.__ The list of topics covered in each session, especially, is subject to change. The ultimate goal of the tutorials is to cover more or less the same ground as Matt Blackwell's [Data Analysis and Politics](https://gov51.mattblackwell.org/) course at Harvard University.
 
