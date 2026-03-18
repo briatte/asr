@@ -77,7 +77,7 @@ _This README does not include links to the data sources, but these are provided 
   - Code spanning multiple lines, and pipes: `%>%` or `|>`
   - R objects and types
   - R datasets, a.k.a. ‘data frames’ or ‘tibbles’
-  - Logical tests: `TRUE` (=1) or `FALSE` (=0), `==`, `!=`, `>=` etc.
+  - Logical tests: `TRUE` (=1) or `FALSE` (=0), `==`, `!=`, `>=`, `%in%`, etc.
   - R has many packages and sub-syntaxes: base, `{tidyverse}`, `{ggplot2}`, etc.
 - __Data wrangling__, mostly with the `{dplyr}` package
   - __Data I/O__
