@@ -17,8 +17,8 @@ Simply go through the script by reading the comments and executing the line of c
 
 Like I said, a few lines won't produce any results, and at some point, you will also get a warning (which is different from an error). Warnings are fine.
 
-There is a very short exercise somewhere in the code. It uses data from the [U.S. General Social Survey][gss] (2000-2014). Give it a go!
+There is a very short exercise somewhere in the code. It uses data from years 2000--2014 of the [U.S. General Social Survey][gss]. Give it a go!
 
 [gss]: https://gss.norc.org/
 
-And if things stop working, just try again. Using R and RStudio will take practice. This is your first practice session.
+And if things stop working, read again through the instructions, and try again. Using R and RStudio will take practice. This is your first practice session.
