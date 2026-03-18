@@ -76,14 +76,16 @@ x %in% 3:5
 # never need to execute it again
 install.packages(c("broom", "ggrepel", "sf", "survey", "texreg", "tidyverse"))
 
-# the following line loads one of the installed package (it 'activates' it, in
-# a way); you will need to do this every time you launch R and want to use it
+# the following line loads one of the installed packages (it 'activates' it, in
+# a way); you will need to do this every time you launch R and want to use it,
+# and you will need to successfully load that package for the rest of thee code
+# below to work properly
 library(tidyverse)
 
 # data --------------------------------------------------------------------
 
 # this opens a dataset that's included in what you just installed; it won't
-# work if you did not installed the 'tidyverse' package first (see above)
+# work if you did not install the 'tidyverse' package first (see above)
 gss <- forcats::gss_cat
 gss
 
@@ -109,7 +111,7 @@ table(gss$rincome)
 count(gss, rincome)
 
 # do not worry if the jargon (dataset, observations, variables, values) does
-# not yet entire sense to you: we will work on that in class
+# not yet make entire sense to you: we will work on it in class
 
 # code that spans multiple lines ------------------------------------------
 
