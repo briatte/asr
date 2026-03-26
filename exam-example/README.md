@@ -10,6 +10,7 @@ __Data source:__ [Quality of Government Basic Dataset][qog], time-series version
 
 - full student name required at the top
 - questions appear in the code sections
+- see the next page for additional hints
 - main dataset should be called `df` (as indicated in the script)
 - do _not_ modify the numbered code sections
 - do _not_ modify the folder structure
@@ -31,31 +32,38 @@ All other student regulations apply.
 - Questions 1--5, 7 and 9 are worth 2 points each
 - Questions 6 and 8 are worth 3 points each
 
-## Copy of the exam questions
+## Exam questions, with details and hints
 
-1. load the data
-2. subset to most recent year
-3. drop observations with missing values in `wdi_wip` or `ht_regtype`
-4. recode `ht_regtype` as `democratic` (`0` = `FALSE`, `1` = `TRUE`)
-5. using `wdi_gdpcapcon2015`, create `log_gpdc` (logarithmic units)
-6. correlate `wdi_wip` to `log_gdpc`
-    1. provide the correlation coefficient, rounded to 2 digits
-    2. provide a plot of the relationship
-    3. briefly comment on the relationship
-7. do democracies have more females in parliament on average?
-    1. express the difference in percentage points, rounded to 1 digit
-    2. determine whether the observed difference is statistically significant
-8. estimate linear regression models
-    1. express `wdi_wip` as a linear function of `log_gdpc`
-    2. fit the same model to democracies and non-democracies separately
-    3. compare the models and comment on their results
-9. plot the residuals of the model and interpret
+1. __Load the data.__  
+    _Hint:_ check the `data` folder.
+2. __Subset to the most recent year.__
+3. __Drop observations with missing values in `wdi_wip` or `ht_regtype`.__
+4. __Recode `ht_regtype` as `democratic` (`0` = `FALSE`, `1` = `TRUE`).__
+5. __Using `wdi_gdpcapcon2015`, create `log_gpdc` (logarithmic units).__  
+    _Hint:_ use the `log` function.
+6. __Correlate `wdi_wip` to `log_gdpc`__, as follows:
+    1. Provide the correlation coefficient, rounded to 2 digits
+    2. Provide a plot of the relationship, with `log_gdpc` on the y-axis
+    3. Briefly comment on the relationship
+7. __Do democracies have more females in parliament on average?__ Find out by doing the following:
+    1. Compute the mean percentage of women in parliament for democracies and non-democracies
+    2. Report the difference between these two means in percentage points, rounded to 1 digit
+    3. Determine whether the observed difference is statistically significant at _p_ < 0.05, and report your interpretation
+8. __Estimate linear regression models__, as follows:
+    1. Regress `wdi_wip` on `log_gdpc`  
+        ... i.e. express `wdi_wip`, the dependent variable, as a linear function of `log_gdpc`, the predictor/independent variable
+    2. Fit the same model to democracies and non-democracies separately
+    3. Compare all three models and comment on their results
+9. __Plot the residuals of the model and interpret them.__  
+      _Hint:_ normality.
 
 * * *
 
 Thank you for your work!
 
 ## R code to generate the data extract
+
+_The code below is not part of the exam, is not useful to complete any of the exam steps, and should be ignored._
 
 ```r
 haven::read_dta("https://www.qogdata.pol.gu.se/data/qog_bas_ts_jan26.dta") %>% 
