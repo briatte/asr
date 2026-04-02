@@ -61,20 +61,6 @@ ggplot(d, aes(y = births, x = schooling)) +
   geom_smooth(method = "lm") +
   geom_text(aes(label = iso3c))
 
-# highlight regions
-ggplot(d, aes(y = births, x = schooling)) +
-  geom_label(aes(label = iso3c, fill = region), color = "white")
-
-# one-way analysis of variance
-summary(aov(births ~ region, data = d))    # fertility
-summary(aov(schooling ~ region, data = d)) # education
-
-# break down the relationship by region
-ggplot(d, aes(y = births, x = schooling)) +
-  geom_smooth(method = "lm") +
-  geom_text(aes(label = iso3c)) +
-  facet_wrap(~ region, scales = "free")
-
 # try fitting a nonlinear relationship
 ggplot(d, aes(y = births, x = schooling)) +
   geom_text(aes(label = iso3c)) +
@@ -101,8 +87,7 @@ broom::glance(m) # goodness-of-fit, including F-test and R-squared
 broom::augment(m, newdata = d)
 
 # visual explanation (for demonstration purposes)
-ggplot(broom::augment(lm(births ~ schooling, data = d), newdata = d),
-       aes(y = births, x = schooling)) +
+ggplot(broom::augment(m, newdata = d), aes(y = births, x = schooling)) +
   geom_smooth(method = "lm", fill = "steelblue", alpha = 1/4) +
   geom_segment(aes(y = .fitted, yend = births, xend = schooling,
                    color = .resid > 0), lty = "dashed") +
@@ -142,8 +127,22 @@ texreg::screenreg(m, ci.force = TRUE, include.rmse = TRUE)
 
 # exercise ----------------------------------------------------------------
 
-# recall sample composition
+# recall sample composition by region
 count(d, region)
+
+# highlight regions
+ggplot(d, aes(y = births, x = schooling)) +
+  geom_label(aes(label = iso3c, fill = region), color = "white")
+
+# break down the relationship by region
+ggplot(d, aes(y = births, x = schooling)) +
+  geom_smooth(method = "lm") +
+  geom_text(aes(label = iso3c)) +
+  facet_wrap(~ region, scales = "free")
+
+# one-way analysis of variance
+summary(aov(births ~ region, data = d))    # fertility
+summary(aov(schooling ~ region, data = d)) # education
 
 # compare the following models, and establish which regions show the most
 # similar profiles when it comes to the relationship between fertility and
