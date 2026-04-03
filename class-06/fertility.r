@@ -13,6 +13,7 @@
 # required packages -------------------------------------------------------
 
 library(broom)
+library(ggrepel)
 library(texreg)
 library(tidyverse)
 
