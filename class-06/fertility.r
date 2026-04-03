@@ -46,7 +46,7 @@ group_by(d, region) %>%
 
 # main relationship under study
 ggplot(d, aes(y = births, x = schooling)) +
-  geom_rug(size = 1, alpha = 1/4) +
+  geom_rug(linewidth = 1, alpha = 1/4) +
   geom_text(aes(label = iso3c))
 
 # show variable means, which are used to compute their correlation
