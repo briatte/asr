@@ -97,11 +97,13 @@ ggplot(broom::augment(m, newdata = d), aes(y = births, x = schooling)) +
   geom_point()
 
 # distribution of the residuals
-# plot(density(resid(m)))
 ggplot(broom::augment(m), aes(.resid)) +
   geom_density() +
   geom_vline(xintercept = 0, lty = "dashed") +
   geom_rug()
+
+# quicker code to get the same thing
+# plot(density(resid(m)))
 
 # root mean squared error (RMSE)
 sqrt(mean(resid(m)^2))
@@ -149,9 +151,8 @@ summary(aov(schooling ~ region, data = d)) # education
 # similar profiles when it comes to the relationship between fertility and
 # female education at the country-level
 
-models <- group_by(d, region) %>%
-  group_split() %>%
-  map(~ lm(births ~ schooling, data = .x))
+models <- map(group_split(group_by(d, region)),
+              ~ lm(births ~ schooling, data = .x))
 
 # region-level models (with abbreviated region names)
 texreg::screenreg(models, include.rmse = TRUE, include.adjrs = FALSE,
