@@ -46,7 +46,7 @@ group_by(d, region) %>%
 
 # main relationship under study
 ggplot(d, aes(y = births, x = schooling)) +
-  geom_rug(linewidth = 1, alpha = 1/4) +
+  geom_rug(linewidth = 1, alpha = .25) +
   geom_text(aes(label = iso3c))
 
 # show variable means, which are used to compute their correlation
@@ -89,7 +89,7 @@ broom::augment(m, newdata = d)
 
 # visual explanation (for demonstration purposes)
 ggplot(broom::augment(m, newdata = d), aes(y = births, x = schooling)) +
-  geom_smooth(method = "lm", fill = "steelblue", alpha = 1/4) +
+  geom_smooth(method = "lm", fill = "steelblue", alpha = .25) +
   geom_segment(aes(y = .fitted, yend = births, xend = schooling,
                    color = .resid > 0), lty = "dashed") +
   geom_point(aes(y = .fitted, x = schooling), color = "steelblue") +

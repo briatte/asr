@@ -42,7 +42,7 @@ pumps <- readr::read_csv("data/cholera-pumps.csv")
 plot <- ggplot(data = fatalities, aes(x = x, y = y)) +
   geom_line(data = streets, aes(group = street), color = "grey50") +
   geom_point() +
-  geom_point(data = pumps, color = "darkred", size = 10, alpha = 1/2) +
+  geom_point(data = pumps, color = "darkred", size = 10, alpha = .5) +
   coord_equal()
 
 plot

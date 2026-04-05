@@ -27,7 +27,7 @@ d$log_gdpc <- log(d$gdpc)
 # if you forgot why, check the distributions
 pivot_longer(select(d, gdpc, log_gdpc), everything(), values_to = "x") %>%
   ggplot(aes(x, fill = name)) +
-  geom_density(alpha = 1/2) +
+  geom_density(alpha = .5) +
   facet_wrap(~ name, scales = "free", ncol = 1)
 
 # create colonial origin dummy
@@ -42,13 +42,13 @@ with(d, table(continent, colonized))
 
 # life expectancy by colonial origin
 ggplot(drop_na(d, colonized, lexp), aes(x = lexp)) +
-  geom_density(aes(fill = colonized), alpha = 1/2) +
-  geom_rug(aes(color = colonized), alpha = 1/2)
+  geom_density(aes(fill = colonized), alpha = .5) +
+  geom_rug(aes(color = colonized), alpha = .5)
 
 # GDP/capita by colonial origin
 ggplot(drop_na(d, colonized, log_gdpc), aes(x = log_gdpc)) +
-  geom_density(aes(fill = colonized), alpha = 1/2) +
-  geom_rug(aes(color = colonized), alpha = 1/2)
+  geom_density(aes(fill = colonized), alpha = .5) +
+  geom_rug(aes(color = colonized), alpha = .5)
 
 # look carefully at the code:
 #
@@ -83,11 +83,9 @@ ci95 <- function(x) {
   se <- sd(x) / sqrt(n)    # standard error of the mean
 
   t <- stats::qnorm(.975)  # t / alpha (critical value)
-  ci_lo <- xbar - t * se   # lower 95% CI
-  ci_hi <- xbar + t * se   # upper 95% CI
 
-  return(round(c("Lower 95% CI" = ci_lo, "Mean" = xbar,
-                 "Upper 95% CI" = ci_hi, "N" = n), 2))
+  return(round(c("Lower 95% CI" = xbar - t * se, "Mean" = xbar,
+                 "Upper 95% CI" = xbar + t * se, "N" = n), 2))
 
 }
 
