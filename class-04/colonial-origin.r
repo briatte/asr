@@ -117,7 +117,7 @@ broom::tidy(t.test(lexp ~ colonized, data = d))
 
 # exercise (1) ------------------------------------------------------------
 
-# t-test of log-GDP/c by colonial origin
+# perform a t-test of log-GDP/c by colonial origin
 
 
 # Q1. how large is the difference?
@@ -130,7 +130,7 @@ broom::tidy(t.test(lexp ~ colonized, data = d))
 count(d, continent, region)
 
 # step 1. subset the data to Africa
-# step 2. t-test between the two regions
+# step 2. perform a t-test between the two regions
 
 
 # kthxbye
